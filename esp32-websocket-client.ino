@@ -3,8 +3,8 @@
 #include <WiFi.h>
 
  // Wifi Config
-const char* ssid = "INFINITUM_FB";
-const char* pass = "GFEABL1969";
+const char* ssid = "WIFI SSID";
+const char* pass = "WIFI PASSWORD";
 
 
 WebSocketsClient socket;

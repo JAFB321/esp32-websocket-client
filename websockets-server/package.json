@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Test web sockets server",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "JAFB321",
   "license": "ISC",

@@ -37,10 +37,15 @@ void setup()
 void loop()
 {
     socket.loop();
-    
-    Serial.println("Sending message..\n");
-    socket.sendTXT("Test!");
-    socket.loop();
 
-    delay(1000);
+    const int pinTouch = touchRead(4);
+
+    if(pinTouch < 40 || pinTouch > 90){
+        Serial.println(pinTouch);    
+        Serial.println("Trying to send message...");
+        socket.sendTXT("Pin touch has been touched!");
+        delay(500);
+    }
+    // socket.loop();
+
 }   
